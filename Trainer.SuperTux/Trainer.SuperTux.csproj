@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project=".\common.props" />
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>wpfui-icon.ico</ApplicationIcon>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Platforms>AnyCPU;x86</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="wpfui-icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Memory.dll.x86" Version="1.2.28" />
+    <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.135" />
+    <PackageReference Include="WPF-UI" Version="4.0.3" />
+    <PackageReference Include="WPF-UI.DependencyInjection" Version="4.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.9" />
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0 " />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\banner.png" />
+    <None Remove="Assets\wpfui-icon-1024.jpg" />
+    <None Remove="Assets\wpfui-icon-256.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Trainer.SuperTux.Messages\Trainer.SuperTux.Messages.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\banner.png" />
+    <Resource Include="Assets\wpfui-icon-1024.jpg" />
+    <Resource Include="Assets\wpfui-icon-256.jpg" />
+  </ItemGroup>
+
+</Project>
