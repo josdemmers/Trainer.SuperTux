@@ -1,6 +1,6 @@
 # Trainer.SuperTux
 
-Experimental trainer for the 32 bit version of SuperTux to experiment with the memory.dll library.
+Experimental trainer for the 32 bit version of [SuperTux](https://www.supertux.org/) to experiment with the memory.dll library.
 
 <div align="center">
 <img alt="" title="SuperTux trainer" src="./readme/readme-top.png" width="95%"/>
